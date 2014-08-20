@@ -1,20 +1,24 @@
 {
-  "name": "passport-google-oauth",
-  "version": "0.1.5",
-  "description": "Google (OAuth) authentication strategies for Passport.",
-  "keywords": ["passport", "google", "auth", "authn", "authentication", "identity"],
+  "name": "mybeat-passport-google-oauth",
+  "version": "0.1.6",
+  "description": "Google (OAuth) authentication strategies for Passport. Modified by Mybeat to support new Google+ API (1 September 2014). May evolve to support alternatives for organisations that have disabled G+",
+  "keywords": ["passport", "google", "auth", "authn", "authentication", "identity", "google+", "oauth"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-google-oauth.git"
+    "url": "git://github.com/mybeatnet/passport-google-oauth.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-google-oauth/issues"
+    "url": "http://github.com/mybeatnet/passport-google-oauth/issues"
   },
   "author": {
     "name": "Jared Hanson",
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
+  "contributors" : [ {
+    "name": "Bradley Greathead",
+    "email": "bradley@mybeat.net"
+  }],
   "licenses": [ {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/MIT" 

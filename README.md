@@ -11,7 +11,7 @@ unobtrusively integrated into any application or framework that supports
 
 ## Install
 
-    $ npm install passport-google-oauth
+    $ npm install mybeat-passport-google-oauth
 
 ## Usage of OAuth 1.0
 
@@ -113,11 +113,12 @@ and the [OAuth 2.0 example](https://github.com/jaredhanson/passport-google-oauth
     $ npm install --dev
     $ make test
 
-[![Build Status](https://secure.travis-ci.org/jaredhanson/passport-google-oauth.png)](http://travis-ci.org/jaredhanson/passport-google-oauth)
+[![Build Status](https://secure.travis-ci.org/Mybeatnet/passport-google-oauth.png)](http://travis-ci.org/Mybeatnet/passport-google-oauth)
 
 ## Credits
 
   - [Jared Hanson](http://github.com/jaredhanson)
+  - [Mybeat](http://github.com/mybeatnet)
 
 ## License
 
