@@ -75,21 +75,38 @@ vows.describe('GoogleStrategy').addBatch({
         clientSecret: 'secret'
       },
       function() {});
-      
+
+
       // mock
       strategy._oauth2.get = function(url, accessToken, callback) {
-        var body = '{ \
-         "id": "00000000000000", \
-         "email": "fred.example@gmail.com", \
-         "verified_email": true, \
-         "name": "Fred Example", \
-         "given_name": "Fred", \
-         "family_name": "Example", \
-         "picture": "https://lh5.googleusercontent.com/-2Sv-4bBMLLA/AAAAAAAAAAI/AAAAAAAAABo/bEG4kI2mG0I/photo.jpg", \
-         "gender": "male", \
-         "locale": "en-US" \
-        }';
-        
+          var body = '{ \
+              "kind": "plus#person", \
+              "etag": "pNz5TVTpPz2Rn5Xw8UrubkkjOJ0/AenY-FZlROzIz_QSAwdBxPRmIuY",\
+              "gender": "male", \
+              "emails": [ \
+              { \
+                  "value": "fred.example@gmail.com", \
+                  "type": "account" \
+              } \
+              ], \
+              "objectType": "person", \
+              "id": "00000000000000", \
+              "displayName": "Fred Example", \
+              "name": { \
+                  "familyName": "Example", \
+                  "givenName": "Fred" \
+              }, \
+              "url": "https://plus.google.com/00000000000000", \
+              "image": { \
+                "url": "http \s://lh3.googleusercontent.com/-XdUIqdMkCWA/BBBBBBBAAI/CCCCCCCCC/4289rscbv5M/photo.jpg?sz=50", \
+                "isDefault": true \
+              }, \
+              "isPlusUser": true, \
+              "language": "en", \
+              "circledByCount": 0, \
+              "verified": false \
+          }';
+
         callback(null, body, undefined);
       }
       
